@@ -1,0 +1,9 @@
+sw01:
+  hostname: localhost
+  groups:
+  - ios
+
+sw02:
+  hostname: localhost
+  groups:
+  - ios
