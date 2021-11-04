@@ -1,0 +1,11 @@
+sw01:
+  hostname: localhost
+  groups:
+  - ios
+  data:
+    dns1: '8.8.8.8'
+
+sw02:
+  hostname: localhost
+  groups:
+  - ios
