@@ -1,0 +1,7 @@
+nornir==3.1.1
+nornir-ansible
+nornir-jinja2
+nornir-napalm
+nornir-netbox
+nornir-netmiko
+nornir-utils
