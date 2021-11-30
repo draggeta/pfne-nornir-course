@@ -1,0 +1,7 @@
+inventory:
+  plugin: SimpleInventory
+
+runner:
+  plugin: threaded
+  options:
+    num_workers: 5
