@@ -1,0 +1,55 @@
+---
+cisco3:
+    hostname: '10.220.88.22'
+    groups:
+      - ios
+    connection_options:
+        napalm:
+            extras:
+                optional_args:
+                    secret: 88newclass
+
+cisco4:
+    hostname: '10.220.88.23'
+    groups:
+      - ios
+    connection_options:
+        napalm:
+            extras:
+                optional_args:
+                    secret: 88newclass
+
+nxos1:
+    hostname: '10.220.88.51'
+    groups:
+      - nxos
+
+nxos2:
+    hostname: '10.220.88.52'
+    groups:
+      - nxos
+
+arista1:
+    hostname: '10.220.88.28'
+    groups:
+      - eos
+
+arista2:
+    hostname: '10.220.88.29'
+    groups:
+      - eos
+
+arista3:
+    hostname: '10.220.88.30'
+    groups:
+      - eos
+
+arista4:
+    hostname: '10.220.88.31'
+    groups:
+      - eos
+
+srx2:
+    hostname: '10.220.88.42'
+    groups:
+      - junos
