@@ -1,0 +1,8 @@
+{%- for acl, acl_list in acls.items() %}
+    {%- for ace in acl_list %}
+set firewall family inet filter {{ acl }} term {{ ace['term_name'] }} from protocol {{ ace['protocol'] }}
+set firewall family inet filter {{ acl }} term {{ ace['term_name'] }} from destination-port {{ ace['destination_port'] }}
+set firewall family inet filter {{ acl }} term {{ ace['term_name'] }} from destination-address {{ ace['destination_address'] }}
+set firewall family inet filter {{ acl }} term {{ ace['term_name'] }} then {{ ace['state'] }}
+    {%- endfor %}
+{% endfor %}
