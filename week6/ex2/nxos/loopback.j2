@@ -1,0 +1,5 @@
+{% for inf in loopbacks %}
+loopback {{ inf.id }}
+  description {{ inf.description }}
+  ip address {{ inf.ip }} {{ inf.mask }}
+{% endfor %}

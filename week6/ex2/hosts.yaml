@@ -1,0 +1,79 @@
+---
+cisco3:
+    hostname: '10.220.88.22'
+    groups:
+      - ios
+    connection_options:
+        napalm:
+            extras:
+                optional_args:
+                    secret: 88newclass
+    data:
+      snmp_id: david1
+
+cisco4:
+    hostname: '10.220.88.23'
+    groups:
+      - ios
+    connection_options:
+        napalm:
+            extras:
+                optional_args:
+                    secret: 88newclass
+    data:
+      snmp_id: david2
+
+nxos1:
+    hostname: '10.220.88.51'
+    groups:
+      - nxos
+    data:
+      loopbacks:
+        - id: 123
+          description: ntp source
+          ip: 1.2.3.4
+          mask: 255.255.255.255
+        - id: 124
+          description: radius source
+          ip: 1.2.4.8
+          mask: 255.255.255.255
+
+nxos2:
+    hostname: '10.220.88.52'
+    groups:
+      - nxos
+    data:
+      # loopbacks:
+      #   - id: 123
+      #     description: ntp source
+      #     ip: 1.2.3.5
+      #     mask: 255.255.255.255
+      #   - id: 124
+      #     description: radius source
+      #     ip: 1.2.4.9
+      #     mask: 255.255.255.255
+
+arista1:
+    hostname: '10.220.88.28'
+    groups:
+      - eos
+
+arista2:
+    hostname: '10.220.88.29'
+    groups:
+      - eos
+
+arista3:
+    hostname: '10.220.88.30'
+    groups:
+      - eos
+
+arista4:
+    hostname: '10.220.88.31'
+    groups:
+      - eos
+
+srx2:
+    hostname: '10.220.88.42'
+    groups:
+      - junos

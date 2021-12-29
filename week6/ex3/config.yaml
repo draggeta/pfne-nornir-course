@@ -1,0 +1,11 @@
+inventory:
+  plugin: SimpleInventory
+  options:
+    host_file: ../../nornir_inventory/hosts.yaml
+    group_file: ../../nornir_inventory/groups.yaml
+    defaults_file: ../../nornir_inventory/defaults.yaml
+
+logging:
+  enabled: True
+  level: DEBUG
+  log_file: logging.log
